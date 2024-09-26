@@ -1,5 +1,23 @@
 let quoteDisplay = document.getElementById("Quote")
-let newQuoteBtn = document.getElementById("newQuoteBtn")
+let newQuoteBtn = document.querySelector("#newQuoteBtn")
+
+let createQuotes = document.createElement("form")
+createQuotes.setAttribute("id", "quoteInput")
+createQuotes.setAttribute("class" "quoteStyling")
+
+let textInput = document.createTextNode("send us your own quotes")
+createQuotes.appendChild(textInput);
+
+let inputField = document.createElement("input")
+inputField.setAttribute("type","text")
+inputField.setAttribute("placeholder", "your inspiration here");
+createQuotes.appendChild(inputField)
+
+let subButton = document.createElement("button")
+subButton.setAttribute("type","submit")
+subButton.textContent("submit")
+
+
 
 newQuoteBtn.addEventListener("click", quoteRandom)
 newQuoteBtn.addEventListener("mouseleave", resetHover)
@@ -27,3 +45,4 @@ function resetHover() {
     event.target.style.backgroundColor = ""
     event.target.innerText = "New Quote! 🎉"
 };
+
