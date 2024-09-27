@@ -1,9 +1,11 @@
+setTimeout(() => {
 window.alert(`There will be days when coding feels impossible, when every line you write seems to break rather than build. 
     The errors pile up, the logic gets blurry, and the thought of giving up creeps in. It's okay to feel frustrated, it's okay to doubt yourself.
      But remember, coding—like life—isn't about perfection, it's about persistence. 
-     So keep going. One line, one function, one breakthrough at a time. The storm will pass, and when it does, you'll stand taller, stronger, and prouder for having weathered it.
+    So keep going. One line, one function, one breakthrough at a time. The storm will pass, and when it does, you'll stand taller, stronger, and prouder for having weathered it.
    Remember: Every great developer was once where you are now. They didn't quit, and neither will you. 
    Because greatness isn’t found in comfort—it's earned through challenge.`);
+}, 1000);
 
 let quoteDisplay = document.getElementById("Quote")
 let newQuoteBtn = document.querySelector("#newQuoteBtn")
